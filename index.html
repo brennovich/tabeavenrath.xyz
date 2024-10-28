@@ -34,14 +34,12 @@
 				-moz-user-select: none;
 				-ms-user-select: none;
 				user-select: none;
-				transition: text-shadow cubic-bezier(0.1, 0.1, 0.25, 2.0) 3s, opacity 1s, transform 1s;
+				transition: text-shadow cubic-bezier(0.1, 0.1, 0.25, 1.0) 3s, opacity 1s, transform 1s;
 				font-size: 4em;
 				text-align: center;
 				color: white;
-				text-shadow: 1px 1px 0px black,
-						-1px -1px 0px black,
-						1px -1px 0px black,
-						-1px 1px 0px black;
+				text-stroke: 1px black;
+				-webkit-text-stroke: 1px black;
 				height: 1em;
 				opacity: .75;
 			}
@@ -49,14 +47,8 @@
 			h1:hover, h1:active {
 				transform: scale(1.005);
 				opacity: 1;
-				text-shadow: 1px 1px 0px black,
-						-1px -1px 0px black,
-						1px -1px 0px black,
-						-1px 1px 0px black,
-						0px 0px 100px pink,
-						0px 0px 150px pink,
-						0px 0px 200px pink,
-						0px 0px 50px pink;
+				text-shadow: 0px 0px 150px pink,
+						0px 0px 100px pink;
 			}
 
 			h1 + h1 {
@@ -65,11 +57,7 @@
 
 			h1 + h1:hover, h1 + h1:active {
 				opacity: 1;
-				text-shadow: 1px 1px 0px black,
-						-1px -1px 0px black,
-						1px -1px 0px black,
-						-1px 1px 0px black,
-						0px 0px 100px orange,
+				text-shadow: 0px 0px 100px orange,
 						0px 0px 150px orange,
 						0px 0px 100px orange;
 			}
@@ -79,11 +67,7 @@
 			}
 
 			h1 + h1 + h1:hover, h1 + h1 + h1:active {
-				text-shadow: 1px 1px 0px black,
-						-1px -1px 0px black,
-						1px -1px 0px black,
-						-1px 1px 0px black,
-						0px 0px 100px yellow,
+				text-shadow: 0px 0px 100px yellow,
 						0px 0px 150px yellow,
 						0px 0px 100px yellow;
 			}
