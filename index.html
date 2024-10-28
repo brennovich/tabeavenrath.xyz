@@ -9,23 +9,83 @@
 				font-family: serif;
 			}
 
-			figure {
-				width: 100px;
-				height: 100px;
-				background-color: red;
+			body {
+				background: radial-gradient(rgba(23, 45, 200, .05), rgba(23, 45, 200, .3));
+			}
 
+			figure {
+				cursor: grab;
 				position: absolute;
-				top:0;
+				top:-10em;
 				bottom: 0;
 				left: 0;
 				right: 0;
 
 				margin: auto;
+				height: 4em;
+				background: transparent;
+			}
+
+			h1 {
+				transition: text-shadow cubic-bezier(0.1, 0.1, 0.25, 2.0) 3s, opacity 1s, transform 1s;
+				font-size: 4em;
+				text-align: center;
+				color: white;
+				text-shadow: 1px 1px 0px black,
+						-1px -1px 0px black,
+						1px -1px 0px black,
+						-1px 1px 0px black;
+				height: 1em;
+				opacity: .75;
+			}
+
+			h1:hover {
+				transform: scale(1.005);
+				opacity: 1;
+				text-shadow: 1px 1px 0px black,
+						-1px -1px 0px black,
+						1px -1px 0px black,
+						-1px 1px 0px black,
+						0px 0px 100px pink,
+						0px 0px 150px pink,
+						0px 0px 200px pink,
+						0px 0px 50px pink;
+			}
+
+			h1 + h1 {
+				opacity: .5;
+			}
+
+			h1 + h1:hover {
+				opacity: 1;
+				text-shadow: 1px 1px 0px black,
+						-1px -1px 0px black,
+						1px -1px 0px black,
+						-1px 1px 0px black,
+						0px 0px 100px orange,
+						0px 0px 150px orange,
+						0px 0px 100px orange;
+			}
+
+			h1 + h1 + h1 {
+				opacity: .25;
+			}
+
+			h1 + h1 + h1:hover {
+				text-shadow: 1px 1px 0px black,
+						-1px -1px 0px black,
+						1px -1px 0px black,
+						-1px 1px 0px black,
+						0px 0px 100px yellow,
+						0px 0px 150px yellow,
+						0px 0px 100px yellow;
 			}
 		</style>
 	</head>
 	<body>
 		<figure>
+			<h1>too many tabs</h1>
+			<h1>too many tabs</h1>
 			<h1>too many tabs</h1>
 		</figure>
 	</body>
